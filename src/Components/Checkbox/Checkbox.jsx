@@ -2,8 +2,11 @@ import React from 'react'
 
 function Checkbox(probs) {
   return (
-    <label htmlFor="">${probs.item}</label>
-    <input type="checkbox" name="" id="" />
+    
+    <div>
+    <input type="checkbox" name={probs.item} id={probs.item} />
+    <label htmlFor={probs.item}>{probs.item}</label>
+    </div>
   )
 }
 
